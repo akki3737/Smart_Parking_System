@@ -1,0 +1,182 @@
+<!doctype html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>parking slot</title>
+	<link rel="stylesheet" href="parking_slot.css">
+	<style >
+		
+		.btn {
+    background-color:white; /* Green */
+    border: none;
+    color: green;
+    padding: 10px 10px 10px 18px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin:1px 1px;
+    cursor: pointer;
+    font-size: 22px;
+    transition: all 0.5s;
+}
+	</style>
+
+	<script type="text/javascript">
+		function alt(btn, color){
+			alert("Parking Reserved")
+    var count=1;
+    var property = document.getElementById(btn);
+    if (count == 0){
+        property.style.backgroundColor = "green"
+        count=1;        
+    }
+    else{
+        property.style.backgroundColor = "red"
+        count=0;
+    }
+
+}
+function alt(btn2, color){
+			alert("Parking Reserved")
+    var count=1;
+    var property = document.getElementById(btn2);
+    if (count == 0){
+        property.style.backgroundColor = "green"
+        count=1;        
+    }
+    else{
+        property.style.backgroundColor = "red"
+        count=0;
+    }
+
+}
+	</script>
+</head>
+<body>
+
+ <div class="container">
+  <!--<img src="car1.jpg" alt="Parking" style="width:100%;">-->
+  <div class="content">
+    <font size="20px">Easy</font>
+    <font size="20px" style="color: green">parking</font>
+   
+        
+    <!--<p>Two and Four wheelers</p>-->
+     </div>
+
+     <div class="logo">
+  <img src="logo.jpg" alt="logo" height="90px" width="80px">
+</div>
+</div>
+
+<!-- end of div-->
+
+
+
+
+
+<div class="tagline">
+<font size="4px">Smart. Beautiful. Parking</font>
+</div>
+
+<
+<div class="linked" style="text-decoration: none;">
+    <a class="active" href="img2.php" style="color:green;">Home</a>
+    <!--<a href="home.html" style="color:green">Help</a>-->
+   </div>
+   
+   <!--
+   <div class="linked-button">
+   <button class="btn" id="myBtn">Login</button>
+    <a href="signup.html" style="color: green">signup</a>
+     <button class="bbtn" id="mybbtn" >Signup</button>
+     </div>-->
+
+<div class="body1">
+ <img src="park102.jpg" alt="Smiley face" height="600px" width="100%"> 
+
+
+ <div id="a-body1"></div>
+<div class="left">
+	<div id="lefthead"><h2>See More Nearby Places</h2></div>
+	
+	<label>
+		
+	</label>
+</div>
+
+
+	<!--<div class="vleft"></div>-->
+<div class="right">
+	<div class="left_slot">
+		<p style="color:#252f33  font-size=50px">left</p>
+
+	<hr>
+	</div>
+	
+
+<div class="vl"></div>
+<button class="fbutton" name="fbutton" id="button" onclick="alt('button', '#101010')">
+	1
+</button>
+
+<div class="v2"></div>
+<button class="fbutton2" name="fbutton2" id="button2" onclick="alt('button2', '#101010')">
+	2
+</button>
+
+<div class="v3"></div>
+<button class="fbutton3" name="fbutton3" onclick="#">
+	3
+</button>
+
+<div class="v4"></div>
+<button class="fbutton4" name="fbutton4" onclick="#">
+	4
+</button>
+<div class="right_slot">
+	<p>right</p>
+
+	<hr/>
+</div>
+
+
+
+
+
+<div class="v5"></div>
+<button class="fbutton5" name="fbutton5" onclick="#">
+	5
+</button>
+
+<div class="v6"></div>
+<button class="fbutton6" name="fbutton6" onclick="#">
+	6
+</button>
+
+<div class="v7"></div>
+<button class="fbutton7" name="fbutton7" onclick="#">
+	7
+</button>
+
+<div class="v8"></div>
+<button class="fbutton8" name="fbutton8" onclick="#">
+	8
+</button>
+
+</div>
+
+<!--<div class="vright"></div>-->
+
+<div class="corner">
+	<div id="head"><h3>Know the Car Slots  !</h3></div>
+	
+	<div id="filledbox"></div>
+	<div id="filledletter"><p>Filled</p></div>
+	<div id="emptybox"></div>
+	<div id="emptyletter"><p>Empty</p></div>
+
+</div>
+</div>
+</body>
+</html>

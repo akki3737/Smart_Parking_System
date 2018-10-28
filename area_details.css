@@ -1,0 +1,151 @@
+.header{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 120px;
+  width: 100%;
+  background-color: white;
+}
+.container {
+    position:relative;
+    top: 0px;
+    background-color: white;
+     
+    margin: 0 auto;
+
+}
+.content {
+    position: absolute; 
+    top:15px;
+    height: 70px;
+    font-size: 30px;
+    font-family : Impact,cursive;
+    left:100px;
+}
+
+.logo {
+  position:absolute;
+  top: 5px;
+  left:10px;
+}
+
+.tagline  {
+        position:absolute;
+        top:80px;
+        left: 110px;
+        /*background:white;*/
+        color: #51717A;
+        height:10px;
+        font-family: Florence, cursive;
+ }
+ .button{
+  position: absolute;
+  top: 70px;
+  right: 20px;
+  
+
+ }
+.linked-button{
+    background-color: white;
+    border: none;
+    color: green;
+   
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+/*body1*/
+
+.body1 {
+  position: absolute;
+  top: 120px;
+  left: 0px;
+  height: 537px;
+  width: 100%;
+  background-color: rgba(85, 91, 117, 0.7);
+}
+.body1-content{
+  position:absolute;
+  top: 0px;
+  left: 0px;
+  box-sizing: border-box;
+  padding: 40px;
+  width:650px;
+  height: 537px;
+
+  background-color: rgba(85, 91, 117, 0.7);
+}
+
+#body1-content_right{
+  position: absolute;
+  top: 0px;
+  width: 716px;
+  height: 537px;
+  left: 650px;
+ background-color:rgba(85, 91, 117,0.7);
+
+}
+::placeholder{
+  color: white;
+
+}
+
+input[type="text"],
+input[type="password"],
+input[type="time"],input[type="number"],input[type="file"]{
+  display: block;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  padding: 4px;
+  width: 220px;
+  height: 40px;
+  border: none;
+  border-bottom: 1px solid #AAA;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 1.2em;
+  transition: 0.2s ease;
+  background-color: rgba(85, 91, 117, 0.1);
+  color: white;
+  placeholder:white;
+
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus ,
+input[type="time"]:focus{
+  border-bottom: 2px solid #16a085;
+  color: #16a085;
+  transition: 0.2s ease;
+}
+
+input[type="submit"] {
+  margin-top: 28px;
+  width: 120px;
+  height: 32px;
+  background: #16a085;
+  border: none;
+  border-radius: 2px;
+  color: #FFF;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  transition: 0.1s ease;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover,
+input[type="submit"]:focus {
+  opacity: 0.8;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  transition: 0.1s ease;
+}
+
+input[type="submit"]:active {
+  opacity: 1;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+  transition: 0.1s ease;
+}
