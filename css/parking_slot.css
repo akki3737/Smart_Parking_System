@@ -1,0 +1,400 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500);
+*:focus {
+  outline: none;
+}
+
+.main-body{
+  position: relative;
+  width: 1366px;
+
+}
+
+
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+
+}
+
+
+.container {
+    position:relative;
+    max-width:100%;
+    height: 120px;
+    background-color: white;
+    margin: 0 auto;
+
+}
+/*body{
+  background-color: #51717A ; 
+}*/
+.logo {
+  position:absolute;
+  top:20px;
+  left:6px;
+
+}
+
+
+
+.container .content {
+    position: absolute; 
+    top:20px;
+
+    background: white;
+    color: #; 
+    
+    height: 70px;
+    
+    font-size: 30px;
+    font-family : Impact,cursive;
+    left:90px;
+
+
+}
+
+.tagline{
+        position:absolute;
+        top:80px;
+        left: 110px;
+        /*background:white;*/
+        color: #51717A;
+        height:10px;
+        font-family: Florence, cursive;
+ }
+
+
+.linked {
+  
+  	position :absolute;
+    text-decoration:none;
+ 	  top : 66px;
+ 	  right: 280px;
+  	font-size: 24px;
+  	transform: translate(20%, -7%);
+  	padding: 15px;
+  
+}
+
+
+.linked-button{
+  	position :absolute;
+  	top : 60px;
+  	right: 20px;
+  	font-size: 25px;
+  	transform: translate(20%, -7%);
+  	padding: 5px;
+    text-decoration: none;
+}
+.bbtn {
+    background-color:white; /* Green */
+    border: none;
+    color: green;
+    padding: 10px 18px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin:1px 1px;
+    cursor: pointer;
+    font-size: 22px;
+    transition: all 0.5s;
+}
+
+.body1{
+
+  position: absolute;
+  top: 120px;
+  width: 100%;
+  height: 600px;
+   background: rgba(37,47,51, 0.8); 
+
+
+}
+
+ #a-body1{
+   position: absolute; 
+    top: 0px; 
+  background: rgba(37,47,51, 0.8); 
+
+    color: white; 
+    width: 100%; 
+    height: 560px;
+    padding:20px; 
+    font-size: 30px;
+    font-family : Arial,Helvetica, sans-serif;
+
+}
+.left{
+  position: absolute;
+  top: 20px;
+  left: 10px;
+  height: 450px;
+  width: 300px;
+  /*background-color: green;*/
+}
+#lefthead{
+  position: absolute;
+  left: 20px;
+  color: white;
+  font-family: Roboto;
+}
+
+.vleft{
+  border-left: 6px solid white;
+    height: 550px;
+    position: absolute;
+    left: 320px;
+    margin-left: -3px;
+    top: 20px;
+}
+.right {
+  position: absolute;
+  top: 20px;
+  left: 330px;
+  height: 550px;
+  width: 760px;
+ /* background-color: red;*/
+}
+ .left_slot hr { 
+    
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 5px;
+} 
+.vl {
+    border-left: 6px solid white;
+    height: 40px;
+    position: absolute;
+    left: 120px;
+    margin-left: -3px;
+    top: 50px;
+}
+.fbutton{
+  position: absolute;
+  top: 90px;
+  height: 170px;
+  width: 130px;
+  left: 55px;
+  font-size: 40px;
+  cursor: pointer;
+  background-color: green;
+}
+
+.v2 {
+    border-left: 6px solid white;
+    height: 40px;
+    position: absolute;
+    left: 290px;
+    margin-left: -3px;
+    top: 50px;
+}
+.fbutton2{
+  position: absolute;
+  top: 90px;
+  height: 170px;
+  width: 130px;
+  left: 225px;
+  font-size: 40px;
+  cursor: pointer;
+  background-color: green;
+}
+
+.v3 {
+    border-left: 6px solid white;
+    height: 40px;
+    position: absolute;
+    left:460px;
+    margin-left: -3px;
+    top: 50px;
+}
+.fbutton3{
+  position: absolute;
+  top: 90px;
+  height: 170px;
+  width: 130px;
+  left: 395px;
+  font-size: 40px;
+  cursor: pointer;
+  background-color: red;
+}
+
+.v4 {
+    border-left: 6px solid white;
+    height: 40px;
+    position: absolute;
+    left: 630px;
+    margin-left: -3px;
+    top: 50px;
+}
+.fbutton4{
+  position: absolute;
+  top: 90px;
+  height: 170px;
+  width: 130px;
+  left: 565px;
+  font-size: 40px;
+  cursor: pointer;
+  background-color: green;
+}
+
+.right_slot{
+  position: relative;
+  top: 400px;
+
+
+}
+
+.right_slot hr { 
+    color: white;
+    top:400px;
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 5px;
+
+    
+} 
+
+.v5 {
+    border-left: 6px solid white;
+    height: 40px;
+    position: absolute;
+    left: 120px;
+    margin-left: -3px;
+    top: 480px;
+}
+.fbutton5{
+  position: absolute;
+  top: 310px;
+  height: 170px;
+  width: 130px;
+  left: 55px;
+  font-size: 40px;
+  cursor: pointer;
+  background-color: red;
+}
+
+.v6 {
+    border-left: 6px solid white;
+    height: 40px;
+    position: absolute;
+    left: 290px;
+    margin-left: -3px;
+    top: 480px;
+}
+.fbutton6{
+  position: absolute;
+  top: 310px;
+  height: 170px;
+  width: 130px;
+  left: 225px;
+  font-size: 40px;
+  cursor: pointer;
+  background-color: green;
+}
+
+.v7 {
+    border-left: 6px solid white;
+    height: 40px;
+    position: absolute;
+    left: 460px;
+    margin-left: -3px;
+    top: 480px;
+}
+.fbutton7{
+  position: absolute;
+  top: 310px;
+  height: 170px;
+  width: 130px;
+  left: 395px;
+  font-size: 40px;
+  cursor: pointer;
+  background-color: red;
+}
+
+.v8 {
+    border-left: 6px solid white;
+    height: 40px;
+    position: absolute;
+    left: 630px;
+    margin-left: -3px;
+    top: 480px;
+}
+.fbutton8{
+  position: absolute;
+  top: 310px;
+  height: 170px;
+  width: 130px;
+  left: 565px;
+  font-size: 40px;
+  cursor: pointer;
+  background-color: green;
+}
+.vright {
+    border-left: 6px solid white;
+    height: 550px;
+    position: absolute;
+    right: 370px;
+    margin-left: -3px;
+    top: 20px;
+
+}
+
+.corner{
+  position: absolute;
+  top: 20px;
+  right: 10px;
+  height: 500px;
+  width: 350px;
+  /*background-color: green;*/
+}
+ 
+ #head{
+  position: absolute;
+  color: white;
+  font-size: 20px;
+  left: 100px;
+  font-family: Roboto;
+  top: 50px;
+ }
+#filledbox{
+  position: absolute;
+  top: 120px;
+  width: 30px;
+  height: 30px;
+  left:100px;
+  background-color: red;
+}
+#filledletter{
+  position: absolute;
+  top: 90px;
+  left: 140px;
+  font-size: 30px;
+  color: white;
+  font-family: Roboto;
+}
+#emptybox{
+   position: absolute;
+  top: 170px;
+  width: 30px;
+  height: 30px;
+  left:100px;
+  background-color: green;
+}
+#emptyletter{
+  position: absolute;
+  top: 135px;
+  left: 140px;
+  font-size: 30px;
+  color: white;
+  font-family: Roboto;
+}

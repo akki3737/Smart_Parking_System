@@ -1,11 +1,12 @@
 <!doctype html>
 <html>
 <head>
-<link rel="stylesheet"  href="./css/img.css">
-<link rel="stylesheet" href="./css/cutomerlogin.css">
-<link rel="stylesheet" href="./css/data.css">
-<link rel="stylesheet" href="./css/style.css">  
+<link rel="stylesheet"  href="../css/img2.css">
+<link rel="stylesheet" href="../css/cutomerlogin.css">
+<link rel="stylesheet" href="../css/data.css">
+<link rel="stylesheet" href="../css/style.css">  
 <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css">
 <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -60,9 +61,9 @@ a:link {
 }
 
   </style>
+
 </head>
-<body >
-<!--code of get location-->
+<body>
 <script  type="text/javascript">
 function getLocation()
     {
@@ -78,16 +79,12 @@ function getLocation()
   function redirectToPosition(position)
   {
   var x=alert("Share your location");
-  window.location='./php/result.php?lat='+position.coords.latitude+'&lon='+position.coords.longitude;
+  window.location='result.php?lat='+position.coords.latitude+'&lon='+position.coords.longitude;
   //document.write(lat);
   //document.write("jijiwdefueffhfifefiuewuifuewi;fuiewfuiregfuigrfuigruifgruifgeuifge");
   }
   
 </script>
-
-
-
-
 <!--div--><div class="header">
  <div class="container" style="background-color: white;">
   <!--<img src="car1.jpg" alt="Parking" style="width:100%;">-->
@@ -98,12 +95,19 @@ function getLocation()
         
     <!--<p>Two and Four wheelers</p>-->
      </div>
+     <div class="welcome">
+       <?php
+      session_start();
+        echo "welcome " . $_SESSION["email"] . ".";
+      ?>
+     </div>
+      
 
 
 <!-- end of div-->
 
 <div class="logo">
-  <img src="./img/logo.jpg" alt="logo" height="90px" width="80px">
+  <img src="../img/logo.jpg" alt="logo" height="90px" width="80px">
 </div>
 
 
@@ -115,7 +119,16 @@ function getLocation()
    </div>
    </div>
 <!------------------------>
+<!-- search conatiner            and div body class starts-->
 
+
+
+
+  
+  
+ 
+
+<!--   body class ends-->
 
 
 
@@ -148,7 +161,7 @@ function getLocation()
  <div id="login-box">
   <div class="left">
     <h1 style="color: green;">Sign up</h1>
- <form action="../php/signup.php" method="POST">
+ <form action="signup.php" method="POST">
      <input type="text" name="fname" placeholder="First Name" />
       <input type="text" name="lname" placeholder="Last Name" />
     <input type="text" name="contact" placeholder="Contact" />
@@ -160,7 +173,7 @@ function getLocation()
     <label style="top: 380px; color:grey ; font-size: 15px;">Male</label>
     <input type="radio" name="sex" value="Male">
     <label style="top: 380px; color:grey ; font-size: 15px;">Female</label>
-    <input type="radio" name="sex" value="Female"><br>
+    <input type="radio" name="sex" value="Female">Female<br>
     
     <input type="submit" name="signup" value="Sign me up" style="font-size: 15px; top: 400px;" />
   </div>
@@ -174,7 +187,7 @@ function getLocation()
     <button class="social-signin twitter">Log in with Twitter</button>
     <button class="social-signin google">Log in with Google+</button>
 
-    <a href="./html/mangersign.html" style="position: absolute;top: 500px;right: 50px; color: green;">SignUp Manager</a> 
+    <a href="mangersign.html" style="position: absolute;top: 500px;right: 50px; color: green;">SignUp Manager</a> 
   </div>
  <div class="or" style="color:green;background-color: white;top: 200px;">OR</div>
 </div>
@@ -182,50 +195,51 @@ function getLocation()
 </div></div>
 
  
+
+
+ 
 <!-- the second half-->
 <div class="body2">
 	
-  <div class="middle">
-    <h1> <p> Easy parking</p></h1>
-  </div>
-  <div class="left" style="top:170px; width: 450px; height:200px;">
-    <p><font size="5" style="color: #51717A">&emsp;Anywhere, Anytime</font></p><br>
-    <p >Choose from so many places across Mumbai</p>
-    <p>Find the best option for every journey</p>
-  </div>
 
-  <div class="mid" >
-    <p><font size="5" style="color: #51717A">&emsp;&emsp;Fuel Saving</font></p><br>
-    <p>Save fuel while in search for Parking</p>
-    <p>Double your journey with less fuel</p>
-  </div>
+<div class="data">
 
-  <div class="right2">
-    <p><font size="5" style="color: #51717A">Seamless Experience</font></p><br>
-    <p>Get Your Job Done Easily</p>
-    <p>Follow easy directions and access instructions</p>
-  </div>
-  </div>
+ <h1> <p> Easy parking</p></h1><br><br>
+  <section>
+  	<div class="data1"> <p style="text-indent: 1em;"><font size="5">Anywhere, Anytime&emsp;&emsp;&emsp;&emsp;&emsp;
+  	&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Fuel Saving&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+  	&emsp;&emsp;&emsp;Seamless Experience</font></p><br>
+  	</div>
+ 
 
-<!-- search conatiner            and div body class starts-->
+   </section>
+ <div id="data-content">
+  <p style="line-height: 1.7">&emsp;<font>Choose from so many places across Mumbai&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Save fuel while in search for Parking&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+  &emsp;Pay for EasyParking spaces via the website<br>&emsp;
+  Find the best option for every journey&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Double your journey with less fuel&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+  	&emsp;Follow easy directions and access instructions</font></p> 
+ 
+</div>
+</div></div>
 <div class="linked">
     <a class="active" href="#" style="color:green">Home</a>
-    <a href="img.html" style="color:green">Help</a>
+    <a href="img2.php" style="color:green">Help</a>
    </div>
    
    
    <div class="linked-button">
    
    <!--<button class="btn" id="myBtn">Login</button>-->
-   <a href="./html/customerlogin.html" style="color: green;text-decoration: none;">Login</a>
-    <!--<a href="signup.html" style="color: green">signup</a>-->
-     <button class="bbtn" id="mybbtn">Signup</button>
+   
+     <!-- <a href="signup.html" style="color: green">signup</a>
+     <button class="bbtn" id="mybbtn">Signup</button>-->
+   
+      <a href="logout.php" style="color: green;text-decoration: none;">Logout</a>
      </div>
-
 <div class="a-body">
 
 
-<img src="./img/car2.jpg" alt="Smiley face" height="600px" width="100%"> 
+<img src="../img/car2.jpg" alt="Smiley face" height="600px" width="100%"> 
 
 <div class="body-content">
 <h1><p>Smart Parking is always better Parking.</p>
@@ -235,46 +249,42 @@ function getLocation()
   <p>End to end parking digitisation - our technology provides realtime bird's eye view of all <br>parking information to urban commuters, parking management companies, and the city<br> administration.</p>
   </div>
 
-  <button  style="position: absolute;top: 340px;background-color:green; font-size: 20px;left: 300px;color:white; border-style: all;border-radius: 30px; cursor: pointer;" onclick="getLocation()">Search for Parkings</button> 
+  <button class="reserve" style="position: absolute;top: 340px;background-color:green; font-size: 20px;left: 300px;color:white; border-style: all;border-radius: 30px;" onclick="getLocation()">Search for Parkings</button> 
 
+<!--
+<div id ="search1">
+ <form>
+  <input type="text" name="search" placeholder="Search..">
+  <div id="search-button"><button name="button" value="submit" type="button" style="background-color: transparent;"><i class="fa fa-search"></i></button>
+</form>
+</div>-->
 <div class="mobmap">
-  <img src="./img/mobilemap.jpg" alt ="mobilemap.jpg" height="500px" width="400px">
+  <img src="../img/mobilemap.jpg" alt ="mobilemap.jpg" height="500px" width="400px">
   <div class="ifr">
-<iframe src="./php/park_home.php" width="200px" height="340px" frameborder="0" scrolling="no" style="position: absolute;right: 265px; top: 142px;"></iframe>
+<iframe src="park_home.php" width="200px" height="340px" frameborder="0" scrolling="no" style="position: absolute;right: 265px; top: 142px;"></iframe>
 </div>
 </div>
 
 
+<!--<div class="body3">-->
+	<!--<div class="img1">
+	<img src="car1.jpg" height="400px" width="100%">
+	</div>-->
+<!--<div class="data2">
+	<img src="search1.jpg" alt="search" height="100px" width="120px"> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+	<img src="pointer2.jpg" alt="pointer" height="100px" width="120px" style="border-radius: 20px;">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+	<img src="park.jpg" alt="park" height="100px" width="120px" style="border-radius: 20px">
 </div>
 
-
-
-<!--   body class ends-->
-<div class="body3">
-  <div class="con">
-    <p><h1>Contact Us</h1></p>
-  </div>
-
-<div class="jay">
-  <p><h3>Jayesh Kukreja</h3></p><br>
-  <p><h5>jayeshkukreja@gmail.com</h5></p>
-  <p><h5>9867654676</h5></p>
+<div class="data-content1">
+	<p><font size="5"> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Search&nbsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Book&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Park</font></p>
+</div>
+<div class="data-content2">
+	<p style="line-height: 1.1;"><font>&emsp;&emsp;&emsp;Search and compare all available parking options and&emsp;&emsp;&emsp;&emsp;&emsp;Pre-purchase the perfect spot and have a&emsp;&emsp;&emsp;&emsp;&emsp;Redeem your purchase seamlessly at your selected  <br>
+	 &emsp;&emsp;&emsp;prices at thousands of parking lots and garages in &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;guaranteed space waiting for you when &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;location! It’s that easy. Save time and money with <br>
+	 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Mumbai in real-time.&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;you need it.&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;hassle-free parking.</font></p>
+</div>	-->
 </div>
 
-<div class="aka">
-  <p><h3>Akash Hadwale</h3></p><br>
-  <p><h5>akashhadwale@gmail.com</h5></p>
-  <p><h5>9895624856</h5></p>
-</div>
-
-<div class="sha">
-  <p><h3>Shadrak Gurupnor</h3></p><br>
-  <p><h5>shadrakguropnor@gmail.com</h5></p>
-  <p><h5>8745454454</h5></p>
-</div>
-
-</div>
-	
-</div>
 </body>
 </html> 
